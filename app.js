@@ -1,10 +1,10 @@
 angular.module("Auth",['auth0', 'angular-storage', 'angular-jwt', 'ngMaterial', 'ui.router'])
 .config(function($provide, authProvider,$urlRouterProvider,$stateProvider,$httpProvider,jwtInterceptorProvider){
     
-    authProvider.init({
-        domain : "hemanthauth.auth0.com",
-        clientID : "Q_HKwkAhTB85j8BS5FjYqKD2_xDXckER"
-    });
+    //authProvider.init({
+    //    domain : "hemanthauth.auth0.com",
+     //   clientID : "Q_HKwkAhTB85j8BS5FjYqKD2_xDXckER"
+    //});
     
     $urlRouterProvider.otherwise("/home");
     $stateProvider
@@ -22,3 +22,7 @@ angular.module("Auth",['auth0', 'angular-storage', 'angular-jwt', 'ngMaterial', 
         })
     
 })
+
+
+
+
